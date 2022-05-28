@@ -13,30 +13,65 @@ images[2]="img\\web_img3.JPG";
 
   
 </script>
-<title> Hijri Date Viewr</title>
-<Header style ="text-align:center;" >
-<div name="Main">
-	<div name = "Title" >
-		<p style="font-size:24px;color:#ffffcc">
-			<b> Hijri Calendar Viewer
-			</b>
-		</p>
-	</div>
-</Header>
-<div id ="imgDiv" style ="text-align:center;" ><img id ="img" src="img\\web_img1.JPG"></img></div>
-<body style="background-color:#057700;" onload="fnc()" >
+<head>
+<meta charset="utf-8">
+<title>Hijri Date Viewer</title>
+<style>
+  .header {
+        width: 100%;
+		height: 50px;
+        background-color: teal;
+		text-align: center;
+      }
+	  h1 {
+	     padding-top: 5px;
+	     font-size: 25px;
+		 font-family: cursive;
+		 color: white;		 
+	  }
 
-<div id="videoPreview" style="margin:0 auto;">
+	.imgSpan #img{
+	        width: 20%;
+		height: 50px;
+        	background-color: teal;
+		text-align: center;
+	}
+	#videoPreview #video{
+	Width:420px;
+ 	border: 4px solid teal;
+	height:330px;
+	text-align: center;
+}
 
-<p>        <video width="786px" height="1024px"  controls autoplay loop muted>
+.Description{
+	font-size:18px;
+	color : white;
+}	  
+</style>
+</head>
+   <div class="header">
+	<h1>Hijri Date Viewer </h1>
+	
+   </div>	
+
+
+
+<body style="background-color:darkviolet;" onload="fnc()" >
+
+<div class="imgSpan">
+<div id ="imgDiv" style="text-align: center;" ><img id ="img" src="img\\web_img1.JPG"></img></div>
+</div>
+
+<div id="videoPreview"  style="text-align:center;" >
+     <video id="video" controls autoplay loop muted margin="0,0,0,0">
   	   <source src="preview.mp4" type="video/mp4" >
   	    Your browser does not support the video tag.
            </video>
-</p>
+
 </div>
-<br>
-<div name = "Description">
-	<p style="font-size:18px;color:yellow;">
+
+<div class = "Description">
+	<p  class = "Description">
 		<b>A light-weight tool for windows users to display Arabic Hijri Date Calendar
 		<br><br>
 		The tool displays Hijri Date in Arabic language on the left-bottom corner of the screen<br><br>
@@ -44,19 +79,19 @@ images[2]="img\\web_img3.JPG";
 		interested in hijri calendar
 		<br><br>
 		Once the tool is installed : <br>
-		<ul style="font-size:20px;color:yellow;">
+		<ul class = "Description" >
 		<li> The tool is automatically added to startup-app menu in your windows</li>
 		<li> The tool is automatically launched and directly views the Arabic hijri date</li>
 		<li> The tool doesn't need any runtime or third party app to work</li>
 		</ul>
 		</b>
 	</p>
-	<p style="font-size:20px;color:yellow;"> 1.Extract Files from Hijri4Win.zip file in any location on your computer </p>
-	<p style="font-size:20px;color:yellow;"> 2.Click on <i>Hijri_Instaler.exe</i> file and launch it  </p>
-	<p style="font-size:20px;color:yellow;"> 3.the installer will directly install the program on your machine and launch the tool for use</p>
+	<p class = "Description" style="font-size:20px;color:white;"> 1.Extract Files from HijriDate.zip file in any location on your computer </p>
+	<p class = "Description" style="font-size:20px;color:white;"> 2.Click on <i>Hijri_Instaler.exe</i> file and launch it  </p>
+	<p class = "Description" style="font-size:20px;color:white;"> 3.the installer will directly install the program on your machine and launch the tool for use</p>
 
 </div>
-<div name="contact" style="font-size:14px;background-color:#ffffcc;text-align:center;"> <p> please feel free to contact us for support on <br>
+<div name="contact" style="height:50px; font-size:14px;background-color:#ffffcc;text-align:center;"> <p> please feel free to contact us for support on <br>
 	<a href ="mailto: mohammadteeti@gmail.com"><b>mohammadteeti@gmail.com</b></a></p><br>
 </div>
 
